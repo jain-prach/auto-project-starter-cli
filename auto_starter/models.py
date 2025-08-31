@@ -12,7 +12,7 @@ class ProjectInputs(BaseModel):
     package_manager: Optional[str] = None  # e.g. "npm", "yarn", "pip", "poetry"
 
 class DockerSetup(BaseModel):
-    dockerfile: str
+    dockerfile: Optional[str] = None
     compose_yaml: Optional[str] = None
 
 class ProjectAnalysis(BaseModel):
