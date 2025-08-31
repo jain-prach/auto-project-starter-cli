@@ -21,8 +21,7 @@ class ProjectAnalysis(BaseModel):
     dependencies: Dict[str, List[str]]  # runtime deps
     dev_dependencies: Dict[str, List[str]]  # linting, testing, etc.
     entry_points: List[str]  # e.g. ["src/index.ts", "src/main.py", "src/App.tsx"]
-    feature_modules: Dict[str, Dict[str, str]]  # feature -> related files
+    module_names: Dict[str, Dict[str, str]]  # feature -> related files
     testing_setup: List[str]  # test framework files/config
     ci_cd: Optional[List[str]] = None  # optional GitHub Actions, Docker, etc.
     docker_setup: DockerSetup
-    third_party_services: List[Dict[str, str]]
