@@ -221,7 +221,7 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-[Add your license here]
+[LICENSE.md](LICENSE.md)
 
 ## Acknowledgments
 
